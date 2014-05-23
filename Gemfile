@@ -1,4 +1,3 @@
 source "https://rubygems.org"
-gem 'sinatra'
-gem 'redis'
+%w(sinatra redis).each { |g| gem g }
 group :development do; gem 'shotgun'; end
