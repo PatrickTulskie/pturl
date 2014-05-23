@@ -1,0 +1,1 @@
+A minimal URL shortener using as few lines of code as possible.
