@@ -1,7 +1,9 @@
-get '/' do; erb :index; end
-get '/:hash' do
-  (url = $redis.get(params['hash'])) ? redirect(url) : @result = "Invalid URL" && erb(:short)
+get '/'do
+erb :index
 end
-post '/' do
-  (params['url'] =~ URI::regexp ? $redis.set((@result = SecureRandom.hex(3)), params['url']) :  @result = "Invalid URL") and erb :short
+get '/:s'do
+(url=$r.get(params['s'])) ? redirect(url) : @r="Invalid URL"&&erb(:short)
+end
+post '/'do
+(params['u'] =~ URI::regexp ? $r.set((@r=($r.dbsize+1).to_s(36)), params['u']) : @r="Invalid URL")&&erb(:short)
 end

@@ -1,1 +1,1 @@
-A minimal URL shortener using as few lines of code as possible.  `git ls-files | xargs cat | wc -l`
+Minimal URL shortener in as few characters as possible. `git ls-files|xargs cat|wc -c`
