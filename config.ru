@@ -1,5 +1,5 @@
-%w(rubygems bundler).each{|g|require g}
+require'bundler'
 Bundler.require
-require'./app'
+require'./a'
 $r=Redis.new(db:5)
 run Sinatra::Application
