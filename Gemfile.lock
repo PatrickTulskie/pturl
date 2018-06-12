@@ -1,7 +1,8 @@
 GEM
+  remote: https://rubygems.org/
   specs:
-    rack (1.5.2)
-    rack-protection (1.5.3)
+    rack (1.6.10)
+    rack-protection (1.5.5)
       rack
     redis (3.0.7)
     sinatra (1.4.5)
@@ -16,3 +17,6 @@ PLATFORMS
 DEPENDENCIES
   redis
   sinatra
+
+BUNDLED WITH
+   1.11.2
