@@ -1,2 +1,4 @@
 source'https://rubygems.org'
-%w(sinatra redis).each{|g|gem g}
+gem "sinatra"
+gem "redis"
+gem "base62"

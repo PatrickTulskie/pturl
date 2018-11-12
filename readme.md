@@ -1,1 +1,1 @@
-Minimal URL shortener in as few characters as possible. `git ls-files|xargs cat|wc -c`
+Code Golf URL Shortener. `git ls-files|xargs cat|wc -c`
